@@ -1,6 +1,7 @@
 import {Component, OnInit} from '@angular/core';
 import * as React from 'react';
 import * as ReactDOM from 'react-dom';
+import {HelloComponent} from './hello.component';
 
 @Component({
   selector: 'app-root',
@@ -20,8 +21,8 @@ export class AppComponent implements OnInit {
   }
 }
 
-class HelloComponent extends React.Component {
+/* class HelloComponent extends React.Component {
   render() {
     return React.createElement('div', null, `Hello World`);
   }
-}
+}*/
