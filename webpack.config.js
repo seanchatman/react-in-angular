@@ -82,7 +82,8 @@ module.exports = {
   "resolve": {
     "extensions": [
       ".ts",
-      ".js"
+      ".js",
+      ".tsx"
     ],
     "modules": [
       "./node_modules",
@@ -394,6 +395,10 @@ module.exports = {
   ],
   "publicPath": ""
 })
+      },
+      {
+        "test": /\.tsx$/,
+        "loader": "awesome-typescript-loader",
       },
       {
         "test": /(?:\.ngfactory\.js|\.ngstyle\.js|\.ts)$/,
