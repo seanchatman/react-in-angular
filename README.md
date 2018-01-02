@@ -1,6 +1,6 @@
 # EjectProd
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.6.3.
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.6.3. React 16 has been added manually.
 
 ## Development server
 
