@@ -20,9 +20,3 @@ export class AppComponent implements OnInit {
     console.log('app.component.ts::ngOnInit', 'element', element);
   }
 }
-
-/* class HelloComponent extends React.Component {
-  render() {
-    return React.createElement('div', null, `Hello World`);
-  }
-}*/

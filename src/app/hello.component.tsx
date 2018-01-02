@@ -1,5 +1,5 @@
 import * as React from 'react';
-// import {DatePickerExampleComponent} from './date-picker-example.component';
+import {DatePickerExampleComponent} from './date-picker-example.component';
 
 
 export class HelloComponent extends React.Component {
@@ -11,7 +11,7 @@ export class HelloComponent extends React.Component {
     return (
       <div>
         <span style={this.spanStyle}>Hello World (From TSX)</span>
-        {/*<DatePickerExampleComponent/>*/}
+        <DatePickerExampleComponent/>
       </div>
     );
   }
