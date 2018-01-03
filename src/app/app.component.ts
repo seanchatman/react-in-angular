@@ -10,13 +10,16 @@ import {HelloComponent} from './hello.component';
 })
 export class AppComponent implements OnInit {
   title = 'app';
+  helloComponent: HelloComponent;
 
   ngOnInit() {
-    const element: HelloComponent = ReactDOM.render(
+    this.helloComponent = ReactDOM.render(
       React.createElement(HelloComponent),
       document.getElementById('react-root')
     );
 
-    console.log('app.component.ts::ngOnInit', 'element', element);
+    console.log('app.component.ts::ngOnInit', 'helloComponent', this.helloComponent);
+
+    // console.log(this.helloComponent.props.children[0]);
   }
 }
