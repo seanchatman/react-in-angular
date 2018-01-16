@@ -4989,6 +4989,10 @@ react-dom@^16.2.0:
     object-assign "^4.1.1"
     prop-types "^15.6.0"
 
+react-flip-move@^2.10.2:
+  version "2.10.2"
+  resolved "https://registry.yarnpkg.com/react-flip-move/-/react-flip-move-2.10.2.tgz#efd70dafb11594deac1827d9cf26ea2e773810d6"
+
 react@^16.2.0:
   version "16.2.0"
   resolved "https://registry.yarnpkg.com/react/-/react-16.2.0.tgz#a31bd2dab89bff65d42134fa187f24d054c273ba"

@@ -1,4 +1,4 @@
-import {Component, OnInit} from '@angular/core';
+import {ChangeDetectorRef, Component, OnInit} from '@angular/core';
 import * as React from 'react';
 import * as ReactDOM from 'react-dom';
 import {HelloComponent} from './hello.component';
@@ -11,6 +11,8 @@ import {HelloComponent} from './hello.component';
 export class AppComponent implements OnInit {
   title = 'app';
 
+  constructor(public changeDetector: ChangeDetectorRef) {}
+
   ngOnInit() {
     const element: HelloComponent = ReactDOM.render(
       React.createElement(HelloComponent),
@@ -18,6 +20,8 @@ export class AppComponent implements OnInit {
     );
 
     console.log('app.component.ts::ngOnInit', 'element', element);
+
+    this.changeDetector.detectChanges();
   }
 }
 
