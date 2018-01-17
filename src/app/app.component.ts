@@ -1,7 +1,7 @@
 import {Component, OnInit} from '@angular/core';
 import * as React from 'react';
 import * as ReactDOM from 'react-dom';
-import {HelloComponent} from './hello.component';
+import {HelloComponent} from './hello-world/hello.component';
 
 @Component({
   selector: 'app-root',
@@ -19,9 +19,5 @@ export class AppComponent implements OnInit {
     );
 
     console.log('app.component.ts::ngOnInit', 'helloComponent', this.helloComponent);
-
-    // console.log(this.helloComponent.props.children[0]);
-
-    this.changeDetector.detectChanges();
   }
 }

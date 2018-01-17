@@ -3,7 +3,7 @@ import { NgModule } from '@angular/core';
 
 
 import { AppComponent } from './app.component';
-import { RxExampleComponent } from './rx-example/rx-example.component';
+import {RxExampleComponent} from './rx-example/rx-example.component';
 
 
 @NgModule({

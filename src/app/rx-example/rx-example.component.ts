@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import {RxExampleReactComponent} from './rx-example-react.component';
 import * as ReactDOM from 'react-dom';
+import * as React from 'react';
 import {timer} from 'rxjs/observable/timer';
 
 @Component({
@@ -9,24 +10,24 @@ import {timer} from 'rxjs/observable/timer';
   styleUrls: ['./rx-example.component.css']
 })
 export class RxExampleComponent implements OnInit {
+
   rxExampleReactComponent: RxExampleReactComponent;
 
   ngOnInit() {
-    const helloProps: HelloWorldProps = {
-      compiler: 'gcc',
-      framework: 'react'
+    const reactProps = {
+      transpiler: 'TypeScript',
+      framework: 'React 16',
+      compiler: 'none'
     };
 
     const source = timer(1000, 1000).subscribe((value: number) => {
-      // this.hello.setState({seconds: value});
+      this.rxExampleReactComponent.setState({seconds: value});
     });
 
-    ReactDOM.render(
-      React.createElement(RxExampleReactComponent, helloProps),
-      document.getElementById('helloWorldDiv')
+    this.rxExampleReactComponent = ReactDOM.render(
+      React.createElement(RxExampleReactComponent, reactProps),
+      document.getElementById('rxDiv')
     );
-
-    // console.log(new RxExampleReactComponent(helloProps));
   }
 
 }
