@@ -1,19 +1,28 @@
 import * as React from 'react';
+import {DatePickerExampleComponent} from './date-picker-example.component';
 import {ReactBaseComponent} from './react-base.component';
 
-export class HelloComponent extends ReactBaseComponent {
+export class HelloComponent extends ReactBaseComponent<{}, {}>  {
   spanStyle = {
-    color: '#FF0000'
+    color: '#0000FF'
   };
 
+  constructor(props: any = {}) {
+    super(props);
+
+    console.log('hello.component.tsx::constructor', '');
+  }
+
+  componentDidMount(): void {
+    console.log('hello.component.tsx::componentDidMount', '');
+  }
+
   render() {
-    console.log('hello.component.tsx::render', '');
-
-    this.test();
-
-    return <div>
-      <span style={this.spanStyle}>Hello World (From TSX)</span>
-      <app-angular-component></app-angular-component>
-    </div>;
+    return (
+      <div>
+        <span style={this.spanStyle}>Hello World (From TSX)</span>
+        <DatePickerExampleComponent />
+      </div>
+    );
   }
 }
