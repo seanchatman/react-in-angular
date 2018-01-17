@@ -1,6 +1,6 @@
-# EjectProd
+# React in Angular
 
-This project that has [ReactJS](https://reactjs.org/) merged with [Angular CLI](https://github.com/angular/angular-cli) version 1.6.3. React 16 has been added manually.
+This project that has [ReactJS](https://reactjs.org/) merged with [Angular CLI](https://github.com/angular/angular-cli) version 1.6.3. React 16 was merged manually.
 
 ## Development server
 

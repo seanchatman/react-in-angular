@@ -15,7 +15,7 @@ export class RxExampleComponent implements OnInit {
 
   ngOnInit() {
     const reactProps = {
-      transpiler: 'TypeScript',
+      transpiler: 'Angular 5',
       framework: 'React 16',
       compiler: 'none'
     };

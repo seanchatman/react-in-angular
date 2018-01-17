@@ -1,0 +1,145 @@
+.bottom-cta {
+  background: #f9e42e;
+  padding: 30px;
+  text-align: center;
+}
+
+.bottom-cta__link {
+  background: #033048;
+  color: #ffffff;
+  font-size: 2.4rem;
+  border-radius: 5px;
+  font-weight: 800;
+  padding: 12px 0;
+  width: 280px;
+  text-align: center;
+  display: block;
+  margin: 0 auto;
+}
+
+.container {
+  width: 100%;
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+footer {
+  background: #121212;
+  padding: 65px 0 45px;
+}
+
+.footer__copyright {
+  font-size: 1.8rem;
+  color: #ffffff;
+  font-weight: 600;
+}
+
+.footer__logo {
+  color: #f9e42e;
+}
+
+header {
+  background: #033048;
+  padding: 25px 0;
+  overflow: hidden;
+}
+
+.header__logo {
+  color: #ffffff;
+  float: left;
+  font-size: 2.4rem;
+  padding-left: 15px;
+}
+
+.header__nav {
+  float: right;
+  padding-left: 15px;
+}
+
+.header__nav ul li {
+  display: inline-block;
+  margin: 0 0 0 40px;
+  font-size: 2.4rem;
+}
+
+.header__nav ul li a {
+  color: #f9e42e;
+}
+
+.header__nav {
+  float: right;
+  padding-right: 15px;
+}
+
+.inspiration {
+  padding: 100px 0 80px;
+}
+
+.inspiration p, .inspiration ul {
+  width: 600px;
+}
+
+.inspiration ul {
+  list-style: disc;
+  margin: 30px 0 0 80px;
+}
+
+.inspiration__header {
+  color: #033048;
+  font-size: 4.8rem;
+  font-weight: 600;
+  margin-bottom: 40px;
+}
+
+.logo__header {
+  font-size: 4.8rem;
+  font-weight: 800;
+}
+
+.mission-statement {
+  height: 600px;
+  background: url("header_bg.jpg");
+  padding-top: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.mission-statement__header {
+  font-size: 4.8rem;
+  text-align: center;
+  margin: 120px 0 90px;
+  color: #ffffff;
+}
+
+.mission-statement__react-root {
+  margin-left: 200px;
+}
+
+.mission-statement__rx-root {
+  margin-left: 200px;
+}
+
+.quote {
+  background: url("testimonial_bg.jpg") no-repeat top center #071324;
+  padding: 70px 0 70px;
+  color: #ffffff;
+}
+
+.quote__block {
+  font-size: 3.6rem;
+  font-weight: 300;
+  font-style: italic;
+  text-align: center;
+  width: 75%;
+  margin: 0 auto;
+}
+
+.quote span {
+  font-size: 2rem;
+  margin-top: 15px;
+  font-weight: 600;
+  display: block;
+  text-align: center;
+  font-style: normal;
+}

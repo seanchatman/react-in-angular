@@ -25,9 +25,9 @@ export class RxExampleReactComponent extends React.Component<RxProps, {}> {
 
   render() {
     return <div>
-      <h1>This is the {this.props.transpiler} and {this.props.framework} component</h1>
-      <h2>Angular parent timer: { this.state['seconds'] }</h2>
-      <h2>React component timer: { this.state['reactMilliseconds'] }</h2>
+      <h1>The {this.props.transpiler} component is calling 'setState' on the child {this.props.framework} component.</h1>
+      <h2>Angular parent RxJS timer: { this.state['seconds'] }</h2>
+      <h2>React component RxJS timer: { this.state['reactMilliseconds'] }</h2>
     </div>;
   }
 }

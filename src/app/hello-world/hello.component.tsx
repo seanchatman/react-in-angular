@@ -5,7 +5,9 @@ import {RxExampleReactComponent} from "../rx-example/rx-example-react.component"
 
 export class HelloComponent extends React.Component<{}, {}>  {
   spanStyle = {
-color: '#333'
+    color: '#FFF',
+    fontSize: '2.4rem',
+    marginBottom: '10px'
   };
 
   constructor(props: any = {}) {
@@ -21,7 +23,7 @@ color: '#333'
   render() {
     return (
       <div>
-        <span style={this.spanStyle}>Hello World (From TSX)</span>
+        <span style={this.spanStyle}>This is a React Date Picker</span>
         <DatePickerExampleComponent />
       </div>
     );
